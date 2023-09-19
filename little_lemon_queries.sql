@@ -16,6 +16,17 @@ execute GetOrderDetails using @id;
 
 call CancelOrder(5);
 
+call CheckBooking('2023-09-01', 12);
+
+call AddValidBooking('2023-09-01', 8, 1, 1);
+
+call AddBooking(18, 3, '2022-12-30', 9, 3);
+
+call UpdateBooking(9, '2022-12-17');
+
+call CancelBooking(18);
+
+
 
 
 
